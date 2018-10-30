@@ -44,19 +44,19 @@ $(function () {
                     item.calloutValue = item.High;
 
                     if (item.Date.getMonth() === 0 || item.Date.getMonth() === 1 || item.Date.getMonth() === 11)
-                        item.calloutContent = "WiNTER";
+                        item.calloutContent = "$${WeatherData_Callout_Winter}";
                     else if (item.Date.getMonth() === 2 || item.Date.getMonth() === 3 || item.Date.getMonth() === 4)
-                        item.calloutContent = "SPRING";
+                        item.calloutContent = "$${WeatherData_Callout_String}";
                     else if (item.Date.getMonth() === 5 || item.Date.getMonth() === 6 || item.Date.getMonth() === 7)
-                        item.calloutContent = "SUMMER";
+                        item.calloutContent = "$${WeatherData_Callout_Summer}";
                     else if (item.Date.getMonth() === 8 || item.Date.getMonth() === 9 || item.Date.getMonth() === 10)
-                        item.calloutContent = "FALL";
+                        item.calloutContent = "$${WeatherData_Callout_Fall}";
 
                     ++index;
                 }
                 
-                lowItem.calloutContent = "COLDEST";
-                highItem.calloutContent = "HOTTEST";
+                lowItem.calloutContent = "$${WeatherData_Callout_Cold}";
+                highItem.calloutContent = "$${WeatherData_Callout_Hot}";
                 lowItem.calloutValue = lowItem.Low;
                 highItem.calloutValue = highItem.High;
             }

@@ -113,7 +113,8 @@ $(function () {
                         dataSource: rus,
                         xAxis: "xAxis",
                         yAxis: "yAxis",
-                        valueMemberPath: "ValueInMln"
+                        valueMemberPath: "ValueInMln",
+                        brush: "#9E40F1",
                     },
                     {
                         name: "usaPopulation",
@@ -122,7 +123,8 @@ $(function () {
                         dataSource: usa,
                         xAxis: "xAxis",
                         yAxis: "yAxis",
-                        valueMemberPath: "ValueInMln"
+                        valueMemberPath: "ValueInMln",
+                        brush: "#16B013",
                     },
                     {
                         name: "calloutSeriesUsa",
@@ -131,7 +133,11 @@ $(function () {
                         xMemberPath: "Index",
                         yMemberPath: "Value",
                         labelMemberPath: "Label",
-                        contentMemberPath: "Content"
+                        contentMemberPath: "Content",
+                        calloutBackground: "#16B013",
+                        calloutLeaderBrush: "#16B013",
+                        calloutOutline: "transparent",
+                        calloutStrokeThickness: 0,
                     },
                     {
                         name: "calloutSeriesRus",
@@ -140,7 +146,11 @@ $(function () {
                         xMemberPath: "Index",
                         yMemberPath: "Value",
                         labelMemberPath: "Label",
-                        contentMemberPath: "Content"
+                        contentMemberPath: "Content",
+                        calloutBackground: "#9E40F1",
+                        calloutLeaderBrush: "#9E40F1",
+                        calloutOutline: "transparent",
+                        calloutStrokeThickness: 0,
                     }
                 ]
             });
