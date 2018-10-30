@@ -8,9 +8,7 @@
 <link href="http://staging.igniteui.local/18-2/IgniteUI/css/structure/infragistics.css" rel="stylesheet"></link>
 <link href="http://staging.igniteui.local/18-2/IgniteUI/css/structure/modules/infragistics.ui.chart.css" rel="stylesheet"></link>
 
-<table><tr>
-            <td id="chart" class="chartElement"></td>
-            <td id="columnLegend" style="float: left"></td></tr></table>
+<table><tr><td id="chart" class="chartElement"></td><td id="columnLegend" style="float: left"></td></tr></table>
                 
         <div class="EIA-attribution">
             Energy data from:<br />
@@ -18,22 +16,18 @@
         </div>
         <br/>
         <div>
-            <div class="optionsPane">
-                <div class="optionsColumn">
-                    <div>
-                        <label>Rotate Y Axis</label>
-                        <label id="yAxisAngleLabel" class="values">-90</label>
-                        <div id="yAxisAngleSlider" class="slider"></div>
-                    </div>
+            <fieldset id="chartOptions">
+                <legend>Axis Angle</legend>
+             
+                <div class="optionContainer">
+                    Rotate Y Axis
+                    <div id="yAxisAngleSlider" class="slider"></div>
+                    <label id="yAxisAngleLabel" class="values">-90</label>
                 </div>
-                <div class="optionsColumn">
-                    <div>
-                        <label>Rotate X Axis</label>
-                        <label id="xAxisAngleLabel" class="values">0</label>
-                        <div id="xAxisAngleSlider" class="slider"></div>
-                    </div>
+                <div class="optionContainer">
+                    Rotate X Axis
+                    <div id="xAxisAngleSlider" class="slider"></div>
+                    <label id="xAxisAngleLabel" class="values">0</label>
                 </div>
-
-            </div>
-
+            </fieldset>
         </div>

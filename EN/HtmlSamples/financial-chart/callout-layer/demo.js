@@ -13,8 +13,8 @@ $(function () {
                 var intervalSplit = Math.floor(Math.random() * 300) + 280;
                 var intervalDiv = Math.floor(Math.random() * 400) + 360;
                 var index = 0;
-                var priceLowest = new CalloutItem(index, Number.MAX_SAFE_INTEGER, "$$[XFC_Callout_Min}");
-                var priceHighest = new CalloutItem(index, Number.MIN_SAFE_INTEGER, "$${XFC_Callout_Max}");
+                var priceLowest = new CalloutItem(index, Number.MAX_SAFE_INTEGER, "MIN PRICE");
+                var priceHighest = new CalloutItem(index, Number.MIN_SAFE_INTEGER, "MAX PRICE");
                 calloutData.push(priceLowest);
                 calloutData.push(priceHighest);
 
@@ -34,12 +34,12 @@ $(function () {
                     // creating SPLIT/DIVIDEND events at specific intervals
                     if (index % intervalSplit === 5)
                     {
-                        var stockEvent = new CalloutItem(index, item.close, "$${XFC_Callout_Split}");
+                        var stockEvent = new CalloutItem(index, item.close, "SPLIT");
                         calloutData.push(stockEvent);
                     }
                     else if (index % intervalDiv === 5)
                     {
-                        var stockEvent = new CalloutItem(index, item.close, "$${XFC_Callout_Div}");
+                        var stockEvent = new CalloutItem(index, item.close, "DIV");
                         calloutData.push(stockEvent);
                     }
                     
