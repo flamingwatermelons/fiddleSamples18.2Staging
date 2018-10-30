@@ -1,0 +1,27 @@
+td { vertical-align: top; }
+            .chartElement {
+                padding-bottom: 20px;
+            }
+
+          
+            .slider {
+                width: 245px;
+                margin: 8px 8px 8px 8px;
+                display: inline-block;
+            }
+            .optionContainer {
+                width: 275px;
+                margin: 2px;
+                padding: 2px;
+                display: inline-block;
+                border: 1px solid #e0e0e0;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                border-radius: 4px;
+            } 
+        
+            .values {
+                padding-left: 7px;
+                padding-right: 0px;
+                width: 30px;
+            }
