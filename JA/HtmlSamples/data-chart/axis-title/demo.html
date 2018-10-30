@@ -9,7 +9,9 @@
 <link href="http://staging.igniteui.local/18-2/IgniteUI/css/structure/modules/infragistics.ui.chart.css" rel="stylesheet"></link>
 <script src="http://staging.igniteui.local/18-2/IgniteUI/js/i18n/infragistics-ja.js"></script>
 
-<table><tr><td id="chart" class="chartElement"></td><td id="columnLegend" style="float: left"></td></tr></table>
+<table><tr>
+            <td id="chart" class="chartElement"></td>
+            <td id="columnLegend" style="float: left"></td></tr></table>
                 
         <div class="EIA-attribution">
             エネルギーのデータ ソース:<br />
@@ -17,18 +19,22 @@
         </div>
         <br/>
         <div>
-            <fieldset id="chartOptions">
-                <legend>軸角度</legend>
-             
-                <div class="optionContainer">
-                    Y 軸を回転
-                    <div id="yAxisAngleSlider" class="slider"></div>
-                    <label id="yAxisAngleLabel" class="values">-90</label>
+            <div class="optionsPane">
+                <div class="optionsColumn">
+                    <div>
+                        <label>Y 軸を回転</label>
+                        <label id="yAxisAngleLabel" class="values">-90</label>
+                        <div id="yAxisAngleSlider" class="slider"></div>
+                    </div>
                 </div>
-                <div class="optionContainer">
-                    X 軸を回転
-                    <div id="xAxisAngleSlider" class="slider"></div>
-                    <label id="xAxisAngleLabel" class="values">0</label>
+                <div class="optionsColumn">
+                    <div>
+                        <label>X 軸を回転</label>
+                        <label id="xAxisAngleLabel" class="values">0</label>
+                        <div id="xAxisAngleSlider" class="slider"></div>
+                    </div>
                 </div>
-            </fieldset>
+
+            </div>
+
         </div>
