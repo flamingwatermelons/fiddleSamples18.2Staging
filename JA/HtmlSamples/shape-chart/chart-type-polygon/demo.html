@@ -1,0 +1,19 @@
+<script src="http://jp.staging.igniteui.local/18-2/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script src="http://staging.igniteui.local/18-2/IgniteUI/js/infragistics.core.js"></script>
+<script src="http://staging.igniteui.local/18-2/IgniteUI/js/infragistics.dv.js"></script>
+<link href="http://staging.igniteui.local/18-2/IgniteUI/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://staging.igniteui.local/18-2/IgniteUI/css/structure/infragistics.css" rel="stylesheet"></link>
+<script src="http://staging.igniteui.local/18-2/IgniteUI/js/i18n/infragistics-ja.js"></script>
+
+<script id="customTooltip" type="text/x-jquery-tmpl">
+        <table id="tooltipTable" style="background: white;">
+            <tr> <th colspan="2">${item.Label}</th> </tr>
+            <tr> <td>Width: ${item.Width} m</td> </tr>
+            <tr> <td>Height: ${item.Height} m</td> </tr>
+            <tr> <td>Area: ${item.Area} m</td> </tr>
+        </table>
+    </script>
+
+<div id="chart"></div>

@@ -1,0 +1,75 @@
+<script src="http://jp.staging.igniteui.local/18-2/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script src="http://staging.igniteui.local/18-2/IgniteUI/js/infragistics.core.js"></script>
+<script src="http://staging.igniteui.local/18-2/IgniteUI/js/infragistics.dv.js"></script>
+<link href="http://staging.igniteui.local/18-2/IgniteUI/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://staging.igniteui.local/18-2/IgniteUI/css/structure/infragistics.css" rel="stylesheet"></link>
+<script src="http://staging.igniteui.local/18-2/IgniteUI/js/i18n/infragistics-ja.js"></script>
+
+<div id="chart" class="chart" style="width:600px;height:400px"></div>
+
+    <div>
+        <div class="optionsPane">
+            <div><b>X 軸オプション</b></div>
+            <div class="optionsColumn">
+                <label class="labels">主グリッド線の表示:</label>
+                <input class="checkbox" id="xAxisMajorCheckbox" type="checkbox" checked=""></input>
+                <div>
+                    <label class="labels">$$(AxisMajorGridlinesInterval)</label>
+                    <label class="values" id="xAxisMajorIntervalLabel">1</label>
+                    <div class="slider" id="xAxisMajorIntervalSlider"></div>
+                </div>
+                <div>
+                    <label class="labels">主グリッド線の太さ:</label>
+                    <label class="values" id="xAxisMajorStrokeThicknessLabel">1</label>
+                    <div class="slider" id="xAxisMajorStrokeThicknessSlider"></div>
+                </div>
+
+                <label class="labels">副グリッド線の表示:</label>
+                <input class="checkbox" id="xAxisMinorCheckbox" type="checkbox" checked=""></input>
+                <div>
+                    <label class="labels">補助目盛り間隔:</label>
+                    <label class="values" id="xAxisMinorIntervalLabel">0.5</label>
+                    <div class="slider" id="xAxisMinorIntervalSlider"></div>
+                </div>
+                <div>
+                    <label class="labels">副グリッド線の太さ:</label>
+                    <label class="values" id="xAxisMinorStrokeThicknessLabel">0.5</label>
+                    <div class="slider" id="xAxisMinorStrokeThicknessSlider"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="optionsPane">
+            <div><b>Y 軸オプション</b></div>
+            <div class="optionsColumn">
+                <label class="labels">主グリッド線の表示:</label>
+                <input class="checkbox" id="yAxisMajorCheckbox" type="checkbox" checked/="">
+                <div>
+                    <label class="labels">$$(AxisMajorGridlinesInterval)</label>
+                    <label class="values" id="yAxisMajorIntervalLabel">500</label>
+                    <div class="slider" id="yAxisMajorIntervalSlider"></div>
+                </div>
+                <div>
+                    <label class="labels">主グリッド線の太さ:</label>
+                    <label class="values" id="yAxisMajorStrokeThicknessLabel">1</label>
+                    <div class="slider" id="yAxisMajorStrokeThicknessSlider"></div>
+                </div> 
+
+                <label class="labels">副グリッド線の表示:</label>
+                <input id="yAxisMinorCheckbox" type="checkbox" class="checkbox" checked/="">
+                <div>
+                    <label class="labels">補助目盛り間隔:</label>
+                    <label class="values" id="yAxisMinorIntervalLabel">250</label>
+                    <div class="slider" id="yAxisMinorIntervalSlider"></div>
+                </div>
+                <div>
+                    <label class="labels">副グリッド線の太さ:</label>
+                    <label class="values" id="yAxisMinorStrokeThicknessLabel">0.5</label>
+                    <div class="slider" id="yAxisMinorStrokeThicknessSlider"></div>
+                </div>
+            </input></input></div>
+        </div>
+    </div>
