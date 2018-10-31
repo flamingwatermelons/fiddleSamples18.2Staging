@@ -44,19 +44,19 @@ $(function () {
                     item.calloutValue = item.High;
 
                     if (item.Date.getMonth() === 0 || item.Date.getMonth() === 1 || item.Date.getMonth() === 11)
-                        item.calloutContent = "冬";
+                        item.calloutContent = "$${WeatherData_Callout_Winter}";
                     else if (item.Date.getMonth() === 2 || item.Date.getMonth() === 3 || item.Date.getMonth() === 4)
-                        item.calloutContent = "春";
+                        item.calloutContent = "$${WeatherData_Callout_String}";
                     else if (item.Date.getMonth() === 5 || item.Date.getMonth() === 6 || item.Date.getMonth() === 7)
-                        item.calloutContent = "夏";
+                        item.calloutContent = "$${WeatherData_Callout_Summer}";
                     else if (item.Date.getMonth() === 8 || item.Date.getMonth() === 9 || item.Date.getMonth() === 10)
-                        item.calloutContent = "秋";
+                        item.calloutContent = "$${WeatherData_Callout_Fall}";
 
                     ++index;
                 }
                 
-                lowItem.calloutContent = "最低温度";
-                highItem.calloutContent = "最高温度";
+                lowItem.calloutContent = "$${WeatherData_Callout_Cold}";
+                highItem.calloutContent = "$${WeatherData_Callout_Hot}";
                 lowItem.calloutValue = lowItem.Low;
                 highItem.calloutValue = highItem.High;
             }
