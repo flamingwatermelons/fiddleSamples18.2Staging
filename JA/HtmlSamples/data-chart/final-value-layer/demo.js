@@ -85,22 +85,9 @@ $(function () {
                     },
                     {
                         name: "finalValueSeries",
-                        type: "finalValueLayer",
-                        finalValueSelectionMode: "finalVisibleInterpolated"
+                        type: "finalValueLayer"
                     }
                 ]
-            });
-			
-            $("input[name=finalValueSelectionMode]").change(function(evt, ui) {
-                var series = $("#chart").igDataChart("option", "series");
-                for (var i = 0; i < series.length; ++i) {
-                    if (series[i].name === "finalValueSeries") {
-                        series[i].finalValueSelectionMode = evt.currentTarget.value;
-
-                        $("#chart").igDataChart("option", "series", series);
-                        return;
-                    }
-                }
             });
             
         });

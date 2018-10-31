@@ -66,10 +66,10 @@ $(function () {
             $("#chart").igCategoryChart({
                 dataSource: data,
                 chartType: "column",
-                title: "Weather Data",
-                subtitle: "(High, Low)",
-                xAxisTitle: "Day in Study",
-                yAxisTitle: "Temperature",
+                title: "天気のデータ",
+                subtitle: "(高, 低)",
+                xAxisTitle: "日付",
+                yAxisTitle: "気温",
                 xAxisFormatLabel: formatDateLabel,
                 includedProperties: ["Date", "High", "Low"],
 
