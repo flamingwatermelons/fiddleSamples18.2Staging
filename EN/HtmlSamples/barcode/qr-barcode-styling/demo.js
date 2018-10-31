@@ -1,8 +1,11 @@
 $(function () {
             $("#barcode").igQRCodeBarcode({
-                height: "300px",
-                width: "100%",
+                height: "200px",
+                width: "200px",
                 data: "http://www.infragistics.com/products/jquery/",
+                barBrush: "black",
+                backingBrush: "white",
+                backingOutline: "black",
                 backingStrokeThickness: 1
             });
 
@@ -22,10 +25,7 @@ $(function () {
             });
 
             $("#backingStrokeThickness").slider({
-                min: 0,
-                max: 10,
-                value: 1,
-                step: 1,
+                min: 0, max: 10, value: 1, step: 1,
                 slide: function (event, ui) {
                     $("#barcode").igQRCodeBarcode("option", "backingStrokeThickness", ui.value == 0 ? 0.01 : ui.value);
                     $("#backingStrokeThicknessLabel").text(ui.value);
